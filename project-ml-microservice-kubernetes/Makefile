@@ -19,7 +19,8 @@ install:
     		wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 &&\
     		cp minikube-linux-amd64 /usr/local/bin/minikube &&\
     		chmod 755 /usr/local/bin/minikube &&\
-    		minikube start --memory=1954mb
+    		#minikube start --memory=1954mb
+		minikube start --driver=virtualbox
     	 
     	
 

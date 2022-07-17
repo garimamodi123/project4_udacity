@@ -13,13 +13,17 @@ setup:
 install:
 	# This should be run from inside a  virtualenv
 	pip install --upgrade pip &&\
-		pip install -r requirements.txt &&\
-		wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
-    		chmod +x /bin/hadolint &&\
-    		wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 &&\
-    		cp minikube-linux-amd64 /usr/local/bin/minikube &&\
-    		chmod 755 /usr/local/bin/minikube &&\
-		minikube start 
+		pip install -r requirements.txt
+		wget -O ./hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+        	chmod +x ./hadolint
+	#pip install --upgrade pip &&\
+	#	pip install -r requirements.txt &&\
+	#	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+    	#	chmod +x /bin/hadolint &&\
+    	#	wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 &&\
+    	#	cp minikube-linux-amd64 /usr/local/bin/minikube &&\
+    	#	chmod 755 /usr/local/bin/minikube &&\
+	#	minikube start 
 		#minikube start --driver=virtualbox
     		
 		

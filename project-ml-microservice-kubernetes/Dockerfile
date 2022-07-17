@@ -2,8 +2,8 @@ FROM python:3.7.3-stretch
 
 ## Step 1:
 # Create a working directory
-RUN mkdir /app
-ADD . /app
+#RUN mkdir /app
+#ADD . /app
 WORKDIR /app
 
 ## Step 2:

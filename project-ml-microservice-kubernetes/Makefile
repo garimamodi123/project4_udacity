@@ -13,7 +13,16 @@ setup:
 install:
 	# This should be run from inside a virtualenv
 	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+		pip install -r requirements.txt &&\
+		sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+    	sudo chmod +x /bin/hadolint &&\
+    	sudo wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 &&\
+    	sudo cp minikube-linux-amd64 /usr/local/bin/minikube &&\
+    	sudo chmod 755 /usr/local/bin/minikube &&\
+    	minikube start --memory=1954mb
+    	 
+    	
+
 
 test:
 	# Additional, optional, tests could go here

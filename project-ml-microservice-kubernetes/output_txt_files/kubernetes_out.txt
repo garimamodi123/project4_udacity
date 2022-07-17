@@ -1,1 +1,21 @@
 <paste log output from Kubernetes-mediated prediction, here>
+
+NAMESPACE     NAME                               READY   STATUS    RESTARTS       AGE
+default       development                        1/1     Running   3 (34m ago)    171m
+kube-system   coredns-6d4b75cb6d-l2kgx           1/1     Running   9 (34m ago)    18h
+kube-system   etcd-minikube                      1/1     Running   9 (34m ago)    18h
+kube-system   kube-apiserver-minikube            1/1     Running   10 (35m ago)   18h
+kube-system   kube-controller-manager-minikube   1/1     Running   10 (34m ago)   18h
+kube-system   kube-proxy-p74rr                   1/1     Running   10 (34m ago)   18h
+kube-system   kube-scheduler-minikube            1/1     Running   10 (35m ago)   18h
+kube-system   storage-provisioner                1/1     Running   12 (34m ago)   18h
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}

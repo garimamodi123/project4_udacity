@@ -5,11 +5,17 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+#dockerpath="garimamodi/project4_udacityapi"
+dockerpath="garimamodi/project4_udacity"
+
 
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+echo "Docker ID and Image: $dockerpath" 
+docker login
+docker tag 8ef3cf703e46 garimamodi/project4_udacity:latest
 
 # Step 3:
 # Push image to a docker repository
+#docker push <hostname>:<repository-port>/<image>:<tag>
+docker push garimamodi/project4_udacity:latest
